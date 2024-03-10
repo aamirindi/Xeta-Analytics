@@ -1,0 +1,15 @@
+/* app-sidebar.component.css */
+.open {
+  transform: translateX(0);
+}
+
+.closed {
+  transform: translateX(-200%);
+}
+
+/* app-sidebar.component.css */
+@media (max-width: 768px) {
+  .closed {
+    transform: translateX(-100%);
+  }
+}

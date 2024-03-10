@@ -1,0 +1,18 @@
+@media (max-width: 1000px) {
+  .footer {
+    display: block;
+
+    & .footer-r {
+      display: flex;
+      flex-direction: column;
+      & div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        width: 100%;
+      }
+    }
+  }
+}

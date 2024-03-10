@@ -1,0 +1,14 @@
+@media (max-width: 1000px) {
+  .exercise-card {
+    display: block;
+  }
+}
+@media (max-width: 745px) {
+  .fitness {
+    width: 90%;
+
+    & p {
+      width: 90%;
+    }
+  }
+}

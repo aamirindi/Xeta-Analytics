@@ -1,0 +1,13 @@
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 475px) {
+  .about {
+    width: 70%;
+  }
+}

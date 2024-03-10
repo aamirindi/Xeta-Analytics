@@ -1,0 +1,14 @@
+<div class="flex flex-col justify-center items-center exercise-card">
+  <div
+    class="my-5 shadow-2xl rounded-full w-52 h-52 bg-[{{
+      exercise.backgroundColor
+    }}] flex justify-center items-center relative"
+  >
+    <img [src]="exercise.imageUrl" alt="" width="90%" />
+  </div>
+  <div class="w-1/2 text-[#2C435F] text-center">
+    <p class="text-xl text-[#233470] font-semibold">{{ exercise.name }}</p>
+    <p>{{ exercise.description }}</p>
+    <p class="underline">Read More ></p>
+  </div>
+</div>

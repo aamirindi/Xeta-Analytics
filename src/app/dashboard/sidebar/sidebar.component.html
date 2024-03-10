@@ -1,0 +1,42 @@
+<div
+  [class.open]="isSidebarOpen"
+  [class.closed]="!isSidebarOpen"
+  class="bg-[#FFFFFF] h-full w-72 flex justify-center"
+>
+  <ul class="flex flex-col gap-3 pt-10">
+    <li
+      class="flex items-center px-5 py-2 bg-[#5d5fef] text-white rounded-lg gap-3"
+    >
+      <mat-icon
+        ><span class="material-symbols-outlined">
+          incomplete_circle
+        </span></mat-icon
+      >
+      Dashboard
+    </li>
+    <li class="flex items-center px-5 py-2 gap-3">
+      <mat-icon
+        ><span class="material-symbols-outlined"> leaderboard </span></mat-icon
+      >
+      Leaderboard
+    </li>
+    <li class="flex items-center px-5 py-2 gap-3">
+      <mat-icon
+        ><span class="material-symbols-outlined"> note_alt </span></mat-icon
+      >
+      Track Progress
+    </li>
+    <li class="flex items-center px-5 py-2 gap-3">
+      <mat-icon
+        ><span class="material-symbols-outlined"> monitoring </span></mat-icon
+      >
+      Exercise Progression
+    </li>
+    <li class="flex items-center px-5 py-2 gap-3">
+      <mat-icon
+        ><span class="material-symbols-outlined"> schedule </span></mat-icon
+      >
+      Activity Log
+    </li>
+  </ul>
+</div>

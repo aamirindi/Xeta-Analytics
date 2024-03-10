@@ -1,0 +1,29 @@
+<div class="flex w-full flex-col justify-center items-center">
+  <div
+    class="flex flex-col justify-center items-center text-center w-2/3 fitness"
+  >
+    <p class="text-3xl font-semibold text-[#233470] font-['Crimson_Text']">
+      Elevate Your Fitness: The AI Workout Plan – Precision, Progression,
+      Perfection
+    </p>
+    <p class="text-[#34343C] w-2/3">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+      In hac habitasse platea dictumst. Vivamus eget fermentum augue. Integer
+      congue, libero nec congue fermentum, neque turpis eleifend libero, sit
+      amet dictum dolor felis quis quam. Sed tincidunt
+    </p>
+  </div>
+  <div class="flex flex-col mt-10 justify-center items-center w-full">
+    <p
+      class="text-3xl mt-12 font-semibold text-[#233470] font-['Crimson_Text'] text-center"
+    >
+      Discover the other exercise at FitSnap
+    </p>
+    <div class="flex justify-center items-center space-y-8 exercise-card">
+      <app-exercise-card
+        *ngFor="let exercise of exercises"
+        [exercise]="exercise"
+      ></app-exercise-card>
+    </div>
+  </div>
+</div>

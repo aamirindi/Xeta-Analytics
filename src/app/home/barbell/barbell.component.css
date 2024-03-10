@@ -1,0 +1,15 @@
+@media (max-width: 1175px) {
+  .barbell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .circle {
+    width: 18rem;
+    height: 18rem;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="about">
+  <ng-container *ngFor="let section of exerciseSections">
+    <p class="font-semibold text-xl text-[#19307E]">{{ section.title }}</p>
+    <ng-container *ngIf="section.content">
+      <ul
+        *ngIf="
+          section.title === 'Instruction to perform' ||
+            section.title === 'Tips';
+          else notInstruction
+        "
+        class="instructions-list"
+      >
+        <li *ngFor="let item of section.content">
+          <span class="circle"></span>{{ item }}
+        </li>
+      </ul>
+      <ng-template #notInstruction>
+        <ng-container *ngIf="isString(section.content); else isArray">
+          <p>{{ section.content }}</p>
+        </ng-container>
+        <ng-template #isArray>
+          <ul class="instructions-list">
+            <li *ngFor="let item of section.content">
+              <span class="circle"></span>{{ item }}
+            </li>
+          </ul>
+        </ng-template>
+      </ng-template>
+    </ng-container>
+  </ng-container>
+</div>

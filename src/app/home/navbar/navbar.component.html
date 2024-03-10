@@ -1,0 +1,23 @@
+<mat-toolbar class="navbar fixed z-50 shadow-2xl" color="primary">
+  <div class="flex items-center w-40">
+    <img src="../../../../assets/logo.png" alt="" width="100%" />
+  </div>
+  <button mat-icon-button (click)="toggleNavbar()" class="menu-button">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div class="nav-links" [class.open]="isNavbarOpen">
+    <a mat-button href="#home">Home</a>
+    <a mat-button href="#workout">Workout Plan</a>
+    <a mat-button href="#tracker">AI Tracker</a>
+    <a mat-button href="#exercise">Exercise</a>
+    <a mat-button href="#about">About</a>
+    <button
+      mat-raised-button
+      style="background-color: #2e2e44; color: white"
+      routerLink="/dashboard"
+    >
+      <mat-icon class="material-symbols-rounded"> person </mat-icon>
+      Login
+    </button>
+  </div>
+</mat-toolbar>
